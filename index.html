@@ -160,5 +160,29 @@
             </p>
         </div>
     </div>
+     <script>
+        // Disable right-click
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+    
+});
+
+// Disable Ctrl+U (View Source)
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+        
+    }
+});
+
+// Optional: Disable F12 (DevTools) and Ctrl+Shift+I
+document.addEventListener("keydown", function (e) {
+    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+        e.preventDefault();
+        
+    }
+});
+
+    </script>
 </body>
 </html>
